@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+Form tag 애게<br>
+
+<form action="b2.jsp" method="post">
+data : <input type="text" name="data1"><br>
+<input type="submit" value="전송">
+</form>
+<br>
+
+<form action="b2.jsp" method="get">
+data : <input type="text" name="data1"><br>
+data : <input type="text" name="data2"><br>
+<input type="submit" value="전송">
+</form>
+<br>
+
+<a href="b2.jsp?data1=kkk&data2=jjj">get data 전송</a>
+</body>
+<br>
+
+<form action="b2.jsp" method="get">
+data : <input type="text" name="data1"><br>
+data : <input type="password" name="data2"><br>
+<input type="submit" value="전송">
+</form>
+<br>
+
+<form action="b2.jsp" method="get">
+대<input type="radio" name="size" value="1">
+중<input type="radio" name="size" value="2">
+소<input type="radio" name="size" value="3">
+<input type="submit" value="전송">
+</form>
+<br>
+
+<form action="b2.jsp" method="get">
+자바<input type="checkbox" name="language" value="자바">
+c<input type="checkbox" name="language" value="c">
+jsp<input type="checkbox" name="language" value="jsp">
+<input type="submit" value="전송">
+</form>
+<br>
+
+<form action="b2.jsp" method="get">
+<select name="job">
+	<option>회사원</option>
+	<option>학생</option>
+	<option>백수</option>
+</select>
+<input type="submit" value="전송">
+</form>
+<br>
+
+</html>
