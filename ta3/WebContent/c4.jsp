@@ -1,0 +1,2 @@
+<%@page import="java.util.ArrayList"%><%@page import="com.google.gson.Gson"%><%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>${result} <%-- 소스보기의 공백을 삭제하기 위해서 엔터를 제거해준다 --%>
