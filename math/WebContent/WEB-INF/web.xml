@@ -21,4 +21,16 @@
      Welcome to Tomcat
   </description>
   
+  <!-- servlet -->
+  <servlet>
+  	<servlet-name>calc</servlet-name>
+  	<servlet-class>com.tacademy.math.controller.CalcServlet</servlet-class>
+  </servlet>
+  
+  <!-- servlet mapping -->
+  <servlet-mapping>
+  	<servlet-name>calc</servlet-name>
+  	<url-pattern>/calc</url-pattern>
+  </servlet-mapping>
+  
 </web-app>
