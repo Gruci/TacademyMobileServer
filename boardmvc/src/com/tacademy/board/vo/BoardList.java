@@ -32,4 +32,5 @@ public class BoardList implements Serializable {
 	public String toString() {
 		return "BoardList [cnt=" + cnt + ", board=" + board + "]";
 	}
+
 }

@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.google.gson.Gson;
 import com.tacademy.board.dao.BoardDAO;
 import com.tacademy.board.vo.Board;
+import com.tacademy.board.vo.BoardList;
 import com.tacademy.board.vo.Result;
 
 @WebServlet("/BoardServlet")
@@ -115,12 +116,12 @@ public class BoardServlet extends HttpServlet {
 		ArrayList<Board> list = dao.getBoardList();
 		
 		Gson gson = new Gson();
-		Result rst = new Result();
-		rst.setStatus("sucess");
-		String result = gson.toJson(rst);
-		request.setAttribute("result", result);
-		RequestDispatcher dispatcher = request.getRequestDispatcher("getBoardList.jsp");
-		dispatcher.forward(request, response);
+		
+		BoardList boardList = new BoardList();
+
+		boardList.setBoard(list);
+		String result = gson.toJson(boardList);
+		System.out.print(result);
 	}
 
 	protected void doDeleteBoard(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
